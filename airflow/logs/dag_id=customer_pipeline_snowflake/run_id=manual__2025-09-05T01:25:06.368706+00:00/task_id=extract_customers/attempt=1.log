@@ -1,0 +1,14 @@
+{"timestamp":"2025-09-05T01:25:38.582438","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-05T01:25:38.586312","level":"info","event":"Filling up the DagBag from /Users/user/airflow/dags/customer_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-05T01:25:41.973508Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:25:41.975444Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:25:41.975585Z","level":"info","event":"Current task name:extract_customers","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:25:41.975682Z","level":"info","event":"Dag name:customer_pipeline_snowflake","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:25:41.970495","level":"info","event":"Snowflake Connector for Python Version: 3.17.3, Python Version: 3.12.9, Platform: macOS-10.16-x86_64-i386-64bit","logger":"snowflake.connector.connection"}
+{"timestamp":"2025-09-05T01:25:41.976088","level":"info","event":"Connecting to GLOBAL Snowflake domain","logger":"snowflake.connector.connection"}
+{"timestamp":"2025-09-05T01:25:48.745302","level":"warning","event":"pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.","category":"UserWarning","filename":"/Users/user/airflow/dags/customer_pipeline_dag.py","lineno":92,"logger":"py.warnings"}
+{"timestamp":"2025-09-05T01:25:51.333453Z","level":"info","event":"Extracted customer data from Snowflake.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:25:51.334068","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-09-05T01:25:51.762994Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:25:51.763314Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:25:51.765362Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_customers>","chan":"stdout","logger":"task"}

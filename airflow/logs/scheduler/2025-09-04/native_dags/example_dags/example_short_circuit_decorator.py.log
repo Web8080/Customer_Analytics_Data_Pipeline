@@ -1,0 +1,75 @@
+[2025-09-04T15:10:57.895+0100] {processor.py:161} INFO - Started process (PID=60418) to work on /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-04T15:10:57.904+0100] {processor.py:830} INFO - Processing file /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py for tasks to queue
+[2025-09-04T15:10:57.904+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:57.904+0100] {dagbag.py:538} INFO - Filling up the DagBag from /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-04T15:10:57.983+0100] {processor.py:840} INFO - DAG(s) 'example_short_circuit_decorator' retrieved from /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2025-09-04T15:10:58.919+0100] {processor.py:186} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: serialized_dag.processor_subdir
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 182, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 163, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 859, in process_file
+    serialize_errors = DagFileProcessor.save_dag_to_db(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 114, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 895, in save_dag_to_db
+    import_errors = DagBag._sync_to_db(dags=dags, processor_subdir=dag_directory, session=session)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/models/dagbag.py", line 657, in _sync_to_db
+    for attempt in run_with_db_retries(logger=log):
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/tenacity/__init__.py", line 347, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/tenacity/__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/tenacity/__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/models/dagbag.py", line 670, in _sync_to_db
+    _serialize_dag_capturing_errors(dag, session, processor_subdir)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/models/dagbag.py", line 635, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/models/serialized_dag.py", line 167, in write_dag
+    serialized_dag_db = session.execute(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: serialized_dag.processor_subdir
+[SQL: SELECT serialized_dag.dag_hash, serialized_dag.processor_subdir 
+FROM serialized_dag 
+WHERE serialized_dag.dag_id = ?]
+[parameters: ('example_short_circuit_decorator',)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

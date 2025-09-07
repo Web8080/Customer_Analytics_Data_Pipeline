@@ -1,0 +1,12 @@
+{"timestamp":"2025-09-05T01:22:25.866725","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-05T01:22:25.868418","level":"info","event":"Filling up the DagBag from /Users/user/airflow/dags/customer_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-05T01:22:26.211584Z","level":"error","event":"python(29029) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-05T01:22:26.533680Z","level":"error","event":"python(29032) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-05T01:22:36.037293Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:22:36.039942Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:22:36.042027Z","level":"info","event":"Current task name:extract_customers","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:22:36.042223Z","level":"info","event":"Dag name:customer_pipeline_snowflake","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:22:36.065213","level":"info","event":"Snowflake Connector for Python Version: 3.17.3, Python Version: 3.12.9, Platform: macOS-10.16-x86_64-i386-64bit","logger":"snowflake.connector.connection"}
+{"timestamp":"2025-09-05T01:22:36.069618","level":"info","event":"Connecting to GLOBAL Snowflake domain","logger":"snowflake.connector.connection"}
+{"timestamp":"2025-09-05T01:23:08.478500Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-09-05T01:23:14.229932Z","level":"error","event":"Task killed!","logger":"task"}

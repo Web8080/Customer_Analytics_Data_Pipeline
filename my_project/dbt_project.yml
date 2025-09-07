@@ -1,0 +1,26 @@
+# dbt_project.yml
+
+# Project name must be lowercase with underscores
+name: 'my_project'
+version: '1.0.0'
+
+# This must match your profile name in ~/.dbt/profiles.yml
+profile: 'my_project'
+
+# Where dbt looks for models, seeds, snapshots, etc.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+models:
+  my_project:
+    +schema: "ANALYTICS"       # will build models into ANALYTICS schema
+    +materialized: view       # default: build as views

@@ -1,0 +1,11 @@
+[2025-09-04T15:10:53.784+0100] {processor.py:161} INFO - Started process (PID=60416) to work on /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-09-04T15:10:53.791+0100] {processor.py:830} INFO - Processing file /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py for tasks to queue
+[2025-09-04T15:10:53.792+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:53.792+0100] {dagbag.py:538} INFO - Filling up the DagBag from /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-09-04T15:10:53.820+0100] {processor.py:840} INFO - DAG(s) 'example_short_circuit_operator' retrieved from /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-09-04T15:10:54.015+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:54.014+0100] {override.py:1769} INFO - Created Permission View: can read on DAG:example_short_circuit_operator
+[2025-09-04T15:10:54.023+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:54.023+0100] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_short_circuit_operator
+[2025-09-04T15:10:54.029+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:54.029+0100] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_short_circuit_operator
+[2025-09-04T15:10:54.029+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:54.029+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-09-04T15:10:54.040+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:54.040+0100] {dag.py:3055} INFO - Creating ORM DAG for example_short_circuit_operator
+[2025-09-04T15:10:54.047+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:54.047+0100] {dag.py:3820} INFO - Setting next_dagrun for example_short_circuit_operator to 2025-09-03T00:00:00+00:00, run_after=2025-09-04T00:00:00+00:00
+[2025-09-04T15:10:54.063+0100] {processor.py:183} INFO - Processing /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.282 seconds

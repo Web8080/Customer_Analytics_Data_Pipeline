@@ -1,0 +1,6 @@
+[2025-09-04T15:10:09.652+0100] {processor.py:161} INFO - Started process (PID=60347) to work on /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2025-09-04T15:10:09.658+0100] {processor.py:830} INFO - Processing file /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2025-09-04T15:10:09.658+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:09.658+0100] {dagbag.py:538} INFO - Filling up the DagBag from /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2025-09-04T15:10:09.692+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:09.692+0100] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2025-09-04T15:10:09.692+0100] {processor.py:842} WARNING - No viable dags retrieved from /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2025-09-04T15:10:09.764+0100] {processor.py:183} INFO - Processing /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.115 seconds

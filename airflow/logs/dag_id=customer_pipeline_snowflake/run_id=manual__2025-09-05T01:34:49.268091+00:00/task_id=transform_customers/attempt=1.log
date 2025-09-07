@@ -1,0 +1,11 @@
+{"timestamp":"2025-09-05T01:35:10.731641","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-05T01:35:10.732279","level":"info","event":"Filling up the DagBag from /Users/user/airflow/dags/customer_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-05T01:35:11.253330Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:35:11.253480Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:35:11.254049Z","level":"info","event":"Current task name:transform_customers","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:35:11.254171Z","level":"info","event":"Dag name:customer_pipeline_snowflake","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:35:11.275568Z","level":"info","event":"Transformed customer data.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:35:11.275867","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-09-05T01:35:11.295617Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:35:11.295751Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-05T01:35:11.296287Z","level":"info","event":"Task operator:<Task(PythonOperator): transform_customers>","chan":"stdout","logger":"task"}

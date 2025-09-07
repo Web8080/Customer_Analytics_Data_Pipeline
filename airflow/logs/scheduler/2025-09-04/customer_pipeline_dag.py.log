@@ -1,0 +1,11 @@
+[2025-09-04T15:09:56.023+0100] {processor.py:161} INFO - Started process (PID=60337) to work on /Users/user/airflow/dags/customer_pipeline_dag.py
+[2025-09-04T15:09:56.029+0100] {processor.py:830} INFO - Processing file /Users/user/airflow/dags/customer_pipeline_dag.py for tasks to queue
+[2025-09-04T15:09:56.030+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:09:56.029+0100] {dagbag.py:538} INFO - Filling up the DagBag from /Users/user/airflow/dags/customer_pipeline_dag.py
+[2025-09-04T15:09:56.069+0100] {processor.py:840} INFO - DAG(s) 'customer_pipeline' retrieved from /Users/user/airflow/dags/customer_pipeline_dag.py
+[2025-09-04T15:09:56.300+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:09:56.299+0100] {override.py:1769} INFO - Created Permission View: can delete on DAG:customer_pipeline
+[2025-09-04T15:09:56.307+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:09:56.307+0100] {override.py:1769} INFO - Created Permission View: can read on DAG:customer_pipeline
+[2025-09-04T15:09:56.313+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:09:56.312+0100] {override.py:1769} INFO - Created Permission View: can edit on DAG:customer_pipeline
+[2025-09-04T15:09:56.313+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:09:56.313+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-09-04T15:09:56.322+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:09:56.322+0100] {dag.py:3055} INFO - Creating ORM DAG for customer_pipeline
+[2025-09-04T15:09:56.330+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:09:56.329+0100] {dag.py:3820} INFO - Setting next_dagrun for customer_pipeline to 2025-09-04T00:00:00+00:00, run_after=2025-09-05T00:00:00+00:00
+[2025-09-04T15:09:56.343+0100] {processor.py:183} INFO - Processing /Users/user/airflow/dags/customer_pipeline_dag.py took 0.323 seconds

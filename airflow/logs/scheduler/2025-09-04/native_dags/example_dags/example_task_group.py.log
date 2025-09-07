@@ -1,0 +1,11 @@
+[2025-09-04T15:10:41.703+0100] {processor.py:161} INFO - Started process (PID=60392) to work on /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-04T15:10:41.707+0100] {processor.py:830} INFO - Processing file /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-09-04T15:10:41.708+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:41.708+0100] {dagbag.py:538} INFO - Filling up the DagBag from /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-04T15:10:41.717+0100] {processor.py:840} INFO - DAG(s) 'example_task_group' retrieved from /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-09-04T15:10:41.905+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:41.904+0100] {override.py:1769} INFO - Created Permission View: can read on DAG:example_task_group
+[2025-09-04T15:10:41.912+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:41.912+0100] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_task_group
+[2025-09-04T15:10:41.918+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:41.918+0100] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_task_group
+[2025-09-04T15:10:41.919+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:41.919+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-09-04T15:10:41.927+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:41.927+0100] {dag.py:3055} INFO - Creating ORM DAG for example_task_group
+[2025-09-04T15:10:41.936+0100] {logging_mixin.py:188} INFO - [2025-09-04T15:10:41.936+0100] {dag.py:3820} INFO - Setting next_dagrun for example_task_group to 2025-09-03T00:00:00+00:00, run_after=2025-09-04T00:00:00+00:00
+[2025-09-04T15:10:41.950+0100] {processor.py:183} INFO - Processing /opt/miniconda3/envs/airflow310/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.249 seconds
